@@ -1,0 +1,29 @@
+.Popup {
+  background: white;
+  z-index: 3;
+  max-width: 500px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: fit-content;
+  padding: 10px;
+}
+
+.popup_overlay {
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  top:0;
+
+  //:global(.hide-popup) & {
+  //  display: none;
+  //}
+  //:global(.show-popup) & {
+  //  display: block;
+  //}
+}

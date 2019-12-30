@@ -1,0 +1,28 @@
+.steps_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  border: solid 1px #ccc;
+  margin: auto;
+  width: 800px;
+  padding: 30px 20px;
+  box-shadow: 0 0 50px 6px #ababab;
+  background: #fff;
+
+  .top_step_content {
+    color: #797171;
+    padding: 10px 0;
+  }
+  .buttom_step_content {
+    color: #797171;
+    padding: 10px 0;
+  }
+  .wanted_mortgage{
+    margin-top: 10px;
+    font-weight: bold;
+    span:last-childs {
+      border: solid 1px red
+    }
+  }
+}

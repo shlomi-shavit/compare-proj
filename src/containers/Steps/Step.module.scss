@@ -1,0 +1,38 @@
+.field_wrap {
+  margin-bottom: 20px;
+  color: #737070;
+
+  .question {
+    //color: red
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .input_field {
+    height: 20px;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    border-bottom: solid 1px #cecece;
+    outline: none;
+  }
+}
+
+.input_field {
+  :global(.how-many-years) & {
+    border: solid 1px #cacaca !important;
+    padding: 2px 3px;
+    width: 40px;
+  }
+}
+.question {
+  color: #22b8c5;
+
+  :global(.how-many-years) & {
+    color: #737070;
+    display: inline-block;
+    margin-left: 7px;
+  }
+}

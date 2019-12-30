@@ -1,0 +1,55 @@
+
+.step_counter {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  &:before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: -1;
+  }
+
+  li {
+    list-style-type: none;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    color: #859596;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+
+    :global(.rtl) &{
+      margin-right: 0;
+      margin-left: 25px;
+    }
+
+    &.active_step {
+      background: #000;
+      color: #fff;
+    }
+    &:last-child {
+      margin-right: 0;
+
+      :global(.rtl) & {
+        margin-left: 0;
+      }
+    }
+  }
+}

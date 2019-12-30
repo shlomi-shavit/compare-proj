@@ -1,0 +1,44 @@
+.step_navigation {
+  background: #22b8c5;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation_btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.btn {
+  height: 100%;
+  outline: none;
+  border: none;
+}
+.prev_btn {
+  background: #f3ab9a;
+}
+
+.next_btn {
+  background: #cae4d3;
+  margin-left: auto;
+
+  :global(.rtl) & {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+.end_btn {
+  background: #aceaea;
+}

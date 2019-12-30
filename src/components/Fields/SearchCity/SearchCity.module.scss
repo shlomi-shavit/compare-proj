@@ -1,0 +1,35 @@
+.search_city_wrapper {
+    position: relative;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        z-index: 2;
+        border: solid 1px #e4e4e4;
+        font-size: 12px;
+        top: 20px;
+        max-height: 265px;
+        overflow: scroll;
+    }
+    li {
+        padding: 5px;
+        cursor: pointer;
+        &:hover {
+            background: #22b8c5;
+            color: #ffffff;
+        }
+    }
+    .input_field {
+        height: 20px;
+        width: 100%;
+        border: none;
+        border-bottom: solid 1px #cecece;
+        outline: none;
+        max-width: 300px;
+    }
+}
+
